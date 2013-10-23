@@ -11,6 +11,15 @@ runno lets you define 'jobs' which are simply collections of command line tasks.
 Interestingly, tasks can depend on other tasks, or schedules. This lets you easily build jobs by focussing on what each task needs to run successfully and simply let runno figure out the order in which to run them then execute that order.
 
 
+##Features
+1) Jobs composed of multiple tasks
+2) Tasks can have dependencies on other tasks
+3) Tasks can be scheduled 
+4) Custom config arguments per job (using [Optimist][optimist_web]) 
+5) Templating sytem for task commands (using [Handlebars][handlbars_web])
+
+
+
 ## Usage
 
 **node runno -j [path to jobfile ] [arguments ...]**
@@ -207,15 +216,19 @@ usage :
     
 ```
 
-**NOTE:** This feature is not intended to be used to schedule recurring tasks. The job should be initiated by a cron job and the schedule task can be used to control the timing of tasks within that job.
+**NOTE:** This feature is not intended to be used to schedule recurring tasks or jobs. The job should be initiated by a cron job and the schedule task can be used to control the timing of tasks within that job.
 
 ##Roadmap
 
 Features to be added:
 
 Built in logging functionality - Currently you can just pipe to a file '>> logfile.log'
+
 Error handling behavior - Currently continues on to next script reguardless of success or failure of task
-Restart protection with serialization of progress - 
+
+Restart protection with serialization of progress 
+
+
 
 
 
