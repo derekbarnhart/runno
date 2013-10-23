@@ -28,9 +28,9 @@ Interestingly, tasks can depend on other tasks, or schedules. This lets you easi
 
 ## Usage
 
-**node runno -j [path to jobfile ] [arguments ...]**
+**runno -j [path to jobfile ] [arguments ...]**
 
-``` node runno -j ./examples/basic-job.yml ```
+```runno -j ./examples/basic-job.yml ```
 
 
 [moment_github]: https://github.com/moment/moment
