@@ -146,7 +146,7 @@ runno also implements an command line argument system so you can pass configurat
 
 
 #### Arguments
-As you may have noticed in the sample structure above, runno includes an 'arguments' section in the jobfile. This is where all your configurations can go for the command line. runno uses [Optimist][optimist_github] for argument parsing for each job so you can build your arguments on the structure supported by optimists 'options' method call.
+As you may have noticed in the sample structure above, runno includes an *arguments* section in the jobfile. This is where all your configurations can go for the command line. runno uses [Optimist][optimist_github] for argument parsing for each job so you can build your arguments on the structure supported by optimists 'options' method call.
 
 ex.
 ```
@@ -157,9 +157,15 @@ arguments:
   logfile:
     default: argjob.log
 ```
-The above will create 2 options for your job. 
-sleeptime is required so will hault your script from running if you dont pass it in as an argument
-logfile already has a default so it will already be available within your command templates
+The above will create 2 options for your job.
+
+<dl>
+  <dt>sleeptime</dt>
+  <dd>is required so will hault your script from running if you dont pass it in as an argument</dd>
+
+  <dt>logfile</dt>
+  <dd>already has a default so it will already be available within your command templates</dd>
+</dl>
 
 (see the [optimist repo][optimist_github] for more details on this format)
 
