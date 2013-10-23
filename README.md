@@ -21,6 +21,10 @@ Interestingly, tasks can depend on other tasks, or schedules. This lets you easi
 5) Templating sytem for task commands (using [Handlebars][handlebars_web])
 
 
+## Installation
+
+```npm install runno -g ```
+
 
 ## Usage
 
