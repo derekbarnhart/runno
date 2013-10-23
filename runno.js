@@ -7,6 +7,7 @@ var moment = require('moment')
 var YAML = require("yamljs")
 var handlebars = require('handlebars')
 var argv = require('optimist')
+    .usage('Usage: runno -j [path to job file] [arg 1] [arg 2] ... [arg n]')
     .options('job', { demand:true, string:true, alias:'j' }).argv
 
 var defers = {};
