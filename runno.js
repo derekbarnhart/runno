@@ -18,9 +18,6 @@ try {
     var job = null;
 
     if(argv.job.match(yamlRe)){
-
-        console.log('Its Yaml')
-
         job = YAML.load(argv.job)
 
     } else {
@@ -77,7 +74,6 @@ for(var item in scripts){
             defers[timeName].resolve()
         }else{
             var delay =   time.diff(moment(), 'milliseconds', true);
-            console.log("delay",delay)
             setTimeout(defers[timeName].resolve,delay)
         }
 
