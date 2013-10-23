@@ -16,6 +16,9 @@
     "job",
     "tasks"
   ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "author": "Derek Barnhart",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -27,5 +30,9 @@
     "yamljs": "~0.1.4",
     "handlebars": "~1.0.12",
     "optimist": "~0.6.0"
+  },
+   "preferGlobal": "true",
+  "bin": {
+    "runno" : "runno.js"
   }
 }

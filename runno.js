@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var Q = require('q')
 var _ = require('lodash')
 var exec = require('child_process').exec;
