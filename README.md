@@ -13,9 +13,13 @@ Interestingly, tasks can depend on other tasks, or schedules. This lets you easi
 
 ##Features
 1) Jobs composed of multiple tasks
+
 2) Tasks can have dependencies on other tasks
+
 3) Tasks can be scheduled 
+
 4) Custom config arguments per job (using [Optimist][optimist_web]) 
+
 5) Templating sytem for task commands (using [Handlebars][handlbars_web])
 
 
