@@ -18,9 +18,9 @@ Interestingly, tasks can depend on other tasks, or schedules. This lets you easi
 
 3) Tasks can be scheduled 
 
-4) Custom config arguments per job (using [Optimist][optimist_web]) 
+4) Custom config arguments per job (using [Optimist][optimist_github]) 
 
-5) Templating sytem for task commands (using [Handlebars][handlbars_web])
+5) Templating sytem for task commands (using [Handlebars][handlebars_web])
 
 
 
