@@ -1,0 +1,39 @@
+--- This is a basic job to demonstrate how runno jobs are structured
+arguments:
+  --- You can provide arguments that must be satisfied to run this job here. These will be available to all the command templates below using handlebars notation
+  sleeptime:
+    default: 10
+  logfile:
+    default: myOtherLog.log
+tasks:
+  --- The list of tasks in this job
+  -
+    --- A generic task 
+    id: task-one
+    cmd: >
+      echo This is task-one reporting >> {{logfile}}
+    dependencies: []
+  
+  -
+    --- A task that simulates processing with sleep
+    id: another-task
+    cmd: >
+      sleep {{sleeptime}}; echo I just slept a bit >> {{logfile}}
+    dependencies: []
+  
+  -
+    --- This task needs the previous two to complete before it can start
+    id: dependant-task
+    cmd: >
+      echo I cant run until my dependencies finish >> {{logfile}}
+    dependencies:
+      - task-one
+      - another-task
+  
+  -
+    --- This task simply needs the previous task to complete before it runs
+    id: dependant-task-2
+    cmd: >
+      echo Im dependent on dependant-task >> {{logfile}}
+    dependencies:
+      - dependant-task   

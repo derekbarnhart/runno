@@ -1,0 +1,31 @@
+{
+  "name": "runno",
+  "version": "0.0.1",
+  "description": "Simple job runner for command line tasks with complex dependencies",
+  "main": "runno.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derekbarnhart/runno.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "job",
+    "tasks"
+  ],
+  "author": "Derek Barnhart",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "0e7cc5ce8027943167f94224af7634ed6cefdbb5",
+  "dependencies": {
+    "q": "~0.9.7",
+    "lodash": "~2.2.1",
+    "moment": "~2.3.1",
+    "yamljs": "~0.1.4",
+    "handlebars": "~1.0.12",
+    "optimist": "~0.6.0"
+  }
+}

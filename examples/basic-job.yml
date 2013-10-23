@@ -1,0 +1,33 @@
+--- This is a basic job to demonstrate how runno jobs are structured
+tasks:
+  --- The list of tasks in this job
+  -
+    --- A generic task 
+    id: task-one
+    cmd: >
+      echo This is task-one reporting >> jobs.log
+    dependencies: []
+  
+  -
+    --- A task that simulates processing with sleep
+    id: another-task
+    cmd: >
+      sleep 5; echo I just slept a bit >> jobs.log
+    dependencies: []
+  
+  -
+    --- This task needs the previous two to complete before it can start
+    id: dependant-task
+    cmd: >
+      echo I cant run until my dependencies finish >> jobs.log
+    dependencies:
+      - task-one
+      - another-task
+  
+  -
+    --- This task calls another job
+    id: recursive-task-2
+    cmd: >
+      node runno -j ./examples/arg-job.yml
+    dependencies:
+      - dependant-task  

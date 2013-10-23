@@ -1,0 +1,41 @@
+{
+	"arguments":{
+		"logfile":{"default":"jsonJob.job"}
+
+	},
+
+  "tasks": [
+    {
+      "id": "task-one",
+      "schedule": [
+        "11 06 AM",
+        "h m a"
+      ],
+      "cmd": "echo This is task-one reporting >> {{logfile}}\n",
+      "dependencies": []
+    },
+
+    {
+      "id": "another-task",
+      "cmd": "sleep 5; echo I just slept a bit >> {{logfile}}\n",
+      "dependencies": []
+    },
+
+    {
+      "id": "dependant-task",
+      "cmd": "echo I cant run until my dependencies finish >> {{logfile}}\n",
+      "dependencies": [
+        "task-one",
+        "another-task"
+      ]
+    },
+    
+    {
+      "id": "dependant-task-2",
+      "cmd": "echo Im dependent on dependant-task >> {{logfile}}\n",
+      "dependencies": [
+        "dependant-task"
+      ]
+    }
+  ]
+}

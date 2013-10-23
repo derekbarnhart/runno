@@ -1,0 +1,37 @@
+--- This is a basic job to demonstrate how runno jobs are structured
+tasks:
+  --- The list of tasks in this job
+  -
+    --- A generic task 
+    id: task-one
+    schedule:
+      --- You can set a time that this should start. Item one is the time and item two is the format used to parse the time. uses moment.js
+      - 11 06 AM
+      - h m a
+    cmd: >
+      echo This is task-one reporting >> jobs.log
+    dependencies: []
+  
+  -
+    --- A task that simulates processing with sleep
+    id: another-task
+    cmd: >
+      sleep 5; echo I just slept a bit >> jobs.log
+    dependencies: []
+  
+  -
+    --- This task needs the previous two to complete before it can start
+    id: dependant-task
+    cmd: >
+      echo I cant run until my dependencies finish >> jobs.log
+    dependencies:
+      - task-one
+      - another-task
+  
+  -
+    --- This task simply needs the previous task to complete before it runs
+    id: dependant-task-2
+    cmd: >
+      echo Im dependent on dependant-task >> jobs.log
+    dependencies:
+      - dependant-task 
