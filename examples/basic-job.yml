@@ -28,6 +28,6 @@ tasks:
     --- This task calls another job
     id: recursive-task-2
     cmd: >
-      node runno -j ./examples/arg-job.yml
+      runno -j ./examples/arg-job.yml
     dependencies:
       - dependant-task  
