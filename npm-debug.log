@@ -1,0 +1,152 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.4
+4 verbose publish [ '.' ]
+5 verbose read json /Users/dbarnhart/Development/projects/runno/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/dbarnhart/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+14 verbose folder .
+15 info prepublish runno@0.0.1
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /Users/dbarnhart/.npm/3a52ce78-.lock
+18 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+19 verbose lock /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz /Users/dbarnhart/.npm/d802262b-94535-0-2928758170455694-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+23 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+24 verbose tar unpack /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+25 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+26 verbose lock /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package /Users/dbarnhart/.npm/b58aed55-94535-0-2928758170455694-package.lock
+27 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+28 verbose lock /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz /Users/dbarnhart/.npm/d802262b-94535-0-2928758170455694-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm extractEntry LICENSE
+34 silly gunzTarPerm extractEntry runno.js
+35 silly gunzTarPerm extractEntry examples/arg-job.yml
+36 silly gunzTarPerm extractEntry examples/basic-job.yml
+37 silly gunzTarPerm extractEntry examples/json-job.json
+38 silly gunzTarPerm extractEntry examples/timing-job.yml
+39 verbose read json /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package/package.json
+40 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+41 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+42 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+43 silly lockFile d802262b-94535-0-2928758170455694-tmp-tgz /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/tmp.tgz
+44 verbose from cache /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package/package.json
+45 verbose tar pack [ '/Users/dbarnhart/.npm/runno/0.0.1/package.tgz',
+45 verbose tar pack   '/var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package' ]
+46 verbose tarball /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+47 verbose folder /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+48 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+49 verbose lock /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package /Users/dbarnhart/.npm/b58aed55-94535-0-2928758170455694-package.lock
+50 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+51 verbose lock /Users/dbarnhart/.npm/runno/0.0.1/package.tgz /Users/dbarnhart/.npm/72539b00-hart-npm-runno-0-0-1-package-tgz.lock
+52 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+53 silly lockFile b58aed55-94535-0-2928758170455694-package /var/folders/pj/nbq273qs6r55_plf9khyjmkwt6nfw8/T/npm-34210/1382556494535-0.2928758170455694/package
+54 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+55 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+56 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+57 verbose lock /Users/dbarnhart/.npm/runno/0.0.1/package /Users/dbarnhart/.npm/b738277f-barnhart-npm-runno-0-0-1-package.lock
+58 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+59 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+60 verbose tar unpack /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+61 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+62 verbose lock /Users/dbarnhart/.npm/runno/0.0.1/package /Users/dbarnhart/.npm/b738277f-barnhart-npm-runno-0-0-1-package.lock
+63 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+64 verbose lock /Users/dbarnhart/.npm/runno/0.0.1/package.tgz /Users/dbarnhart/.npm/72539b00-hart-npm-runno-0-0-1-package-tgz.lock
+65 silly gunzTarPerm modes [ '755', '644' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry .npmignore
+68 silly gunzTarPerm extractEntry README.md
+69 silly gunzTarPerm extractEntry LICENSE
+70 silly gunzTarPerm extractEntry runno.js
+71 silly gunzTarPerm extractEntry examples/arg-job.yml
+72 silly gunzTarPerm extractEntry examples/basic-job.yml
+73 silly gunzTarPerm extractEntry examples/json-job.json
+74 silly gunzTarPerm extractEntry examples/timing-job.yml
+75 verbose read json /Users/dbarnhart/.npm/runno/0.0.1/package/package.json
+76 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+77 silly lockFile b738277f-barnhart-npm-runno-0-0-1-package /Users/dbarnhart/.npm/runno/0.0.1/package
+78 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+79 silly lockFile 72539b00-hart-npm-runno-0-0-1-package-tgz /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+80 silly shasum updated bytes 6940
+81 info shasum 8ebd6302930b1a0c8ce7251f04dded308f6488fe
+81 info shasum /Users/dbarnhart/.npm/runno/0.0.1/package.tgz
+82 verbose from cache /Users/dbarnhart/.npm/runno/0.0.1/package/package.json
+83 verbose chmod /Users/dbarnhart/.npm/runno/0.0.1/package.tgz 644
+84 verbose chown /Users/dbarnhart/.npm/runno/0.0.1/package.tgz [ 879410056, 1734605306 ]
+85 silly lockFile 3a52ce78- .
+86 silly publish { name: 'runno',
+86 silly publish   version: '0.0.1',
+86 silly publish   description: 'Simple job runner for command line tasks with complex dependencies',
+86 silly publish   main: 'runno.js',
+86 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+86 silly publish   repository: { type: 'git', url: 'git://github.com/derekbarnhart/runno.git' },
+86 silly publish   keywords: [ 'command', 'line', 'job', 'tasks' ],
+86 silly publish   engines: { node: '>=0.8.0' },
+86 silly publish   author: { name: 'Derek Barnhart' },
+86 silly publish   license: 'MIT',
+86 silly publish   readmeFilename: 'README.md',
+86 silly publish   gitHead: '0e7cc5ce8027943167f94224af7634ed6cefdbb5',
+86 silly publish   dependencies:
+86 silly publish    { q: '~0.9.7',
+86 silly publish      lodash: '~2.2.1',
+86 silly publish      moment: '~2.3.1',
+86 silly publish      yamljs: '~0.1.4',
+86 silly publish      handlebars: '~1.0.12',
+86 silly publish      optimist: '~0.6.0' },
+86 silly publish   preferGlobal: 'true',
+86 silly publish   bin: { runno: 'runno.js' },
+86 silly publish   readme: 'runno (NOTE: currently in ALPHA)\n=====\n\nSimple job runner for command line tasks with complex dependencies\n\n##Purpose\n\nrunno lets you define \'jobs\' which are simply collections of command line tasks. \nInterestingly, tasks can depend on other tasks, or schedules. This lets you easily build jobs by focussing on what each task needs to run successfully and simply let runno figure out the order in which to run them then execute that order.\n\n\n##Features\n1) Jobs composed of multiple tasks\n\n2) Tasks can have dependencies on other tasks\n\n3) Tasks can be scheduled \n\n4) Custom config arguments per job (using [Optimist][optimist_github]) \n\n5) Templating sytem for task commands (using [Handlebars][handlebars_web])\n\n\n## Installation\n\n```npm install runno -g ```\n\n\n## Usage\n\n**node runno -j [path to jobfile ] [arguments ...]**\n\n``` node runno -j ./examples/basic-job.yml ```\n\n\n[moment_github]: https://github.com/moment/moment\n[moment_web]:http://momentjs.com/docs/\n\n[optimist_github]:https://github.com/substack/node-optimist\n\n[handlebars_github]:https://github.com/wycats/handlebars.js/\n[handlebars_web]: http://handlebarsjs.com/\n\n\n## Job File\n\n\n\nJob files can be either json or [yaml](http://www.keleshev.com/yaml-quick-intoduction).\n\n*All examples will be in yaml because its prettier*\n\n**Note:** If using yaml you must use the `.yml` extention when you run the job)\n\n\n_**Checkout the [example job files](https://github.com/derekbarnhart/runno/tree/master/examples)**_\n\n\n\n### Structure\n1. **arguments** - Configuration of arguments required by the job (see [arguments section](https://github.com/derekbarnhart/runno/edit/master/README.md#arguments))\n2. **tasks** - A list of task definitions\n\n\n\nExample using YAML:\n```\n--- samplejob.yml\n\narguments:\n  --- (object)\ntasks:\n  --- (array)\n \n``` \n\n\n\n\n\nPretty simple eh?\n\nThe file is basically just a list of tasks. Each task is structured like this:\n\n\n\n```\n  id: task-id\n  cmd: >\n    echo I am a command line task. I can contain anything\n  dependencies:\n    - that-first-task\n    - this-other-task\n```\n\n\n\n\nProperty | Type | Purpose\n---|---|---\nid | string | A reference so other tasks can mark this as a dependency\ncmd | string | A string that will be run as a command. Can use handlebar style (ex.{{variable}}) placeholders populated from the [arguments](https://github.com/derekbarnhart/runno/edit/master/README.md#arguments) configuration\ndependencies | array | A list of task ids corresponding to tasks that must complete before this task will be run\nschedule | array | An array of 2 items describing the time that this task should be run **Note**: Any task depending on this task will logically be delayed until this time transpires\n\n\nEach task simply contains an id for reference, the command that is will run, and a list of any other tasks that need to complete before it should be run.\n\n\n\n###Sample Job\nA simple job might look like this:\n\n\n\n```\n--- samplejob.yml\ntasks:\n-\n    --- A generic task \n    id: task-one\n    cmd: >\n      echo This is task-one reporting >> jobs.log\n    dependencies: []\n  \n  -\n    --- A task that simulates processing with sleep\n    id: another-task\n    cmd: >\n      sleep 5; echo I just slept a bit >> jobs.log\n    dependencies: \n      - task-one\n```\n\nThis simple job just echos some data into a log file but enforces the dependency that task-one must run before another-task will execute. \n\nAlso note that if you choose yaml as your format you can comment each of your tasks so you know what they are for.\n\n\n\n\n\n### Advanced JobFiles\n\nrunno also implements an command line argument system so you can pass configurations into your jobs and then allow the templating system to interpolate your task\'s commands with those configurations\n\n\n\n\n#### Arguments\nAs you may have noticed in the sample structure above, runno includes an *arguments* section in the jobfile. This is where all your configurations can go for the command line. runno uses [Optimist][optimist_github] for argument parsing for each job so you can build your arguments on the structure supported by optimists \'options\' method call.\n\nex.\n```\narguments:\n sleeptime:\n    demand: true\n    description: The amount of time to make the second command sleep before completing\n  logfile:\n    default: argjob.log\n```\nThe above will create 2 options for your job.\n\n<dl>\n  <dt>sleeptime</dt>\n  <dd>is required so will hault your script from running if you dont pass it in as an argument</dd>\n\n  <dt>logfile</dt>\n  <dd>already has a default so it will already be available within your command templates</dd>\n</dl>\n\n(see the [optimist repo][optimist_github] for more details on this format)\n\nYou can pass in arguments for a script that uses these arguments like this:\n\n```\nnode runno -j myscript.yml --sleeptime 10 --logfile /path/to/mylogfile.log\n\n```\n\n\n\n\n#### Command Templates\n\nOnce the arguments have been collected for your job (either passed in or defaults) an options object will be used in interpolating the cmd property on each task defined in the job. The templating sytem used is [Handlebars][handlebars_web]. So to write commands that would work with the above arguments we would simply do something like this:\n\n```\ntasks:\n  -\n    id: task-one\n    cmd: >\n      sleep {{sleeptime}}; echo This is task-one reporting >> {{logfile}}\n    dependencies: []\n  \n```\n\nAnything you can put in a handlebars template you can put in your command templates.\n\n(See [Handlebars][handlebars_web] for more information - [repo][handlebars_github])\n\n\n\n### Schedule dependency\n\nPerhaps in addition to a script having dependencies on other scripts running first it must also wait until a specific time has passed. The schedule property can be provided to allow this funtionality.\n\nThe schedule property accepts an array containing 2 elements\n- A string representing the time the script should be run ex. "03 00 AM"\n- A string defining the format used in the first element ex. "h m a"\n\nrunno uses the [Moment.js][moment_web] library to provide this funtionality. \n\n(see [Moment.js][moment_web] documentation for more details - [repo][moment_github])\n\nusage :\n\n```\n-\n    --- A scheduled task \n    id: task-one\n    schedule:\n      - 11 06 AM\n      - h m a\n    cmd: >\n      echo Its 11 06 AM\n    dependencies: []\n    \n```\n\n**NOTE:** This feature is not intended to be used to schedule recurring tasks or jobs. The job should be initiated by a cron job and the schedule task can be used to control the timing of tasks within that job.\n\n##Roadmap\n\nFeatures to be added:\n\nBuilt in logging functionality - Currently you can just pipe to a file \'>> logfile.log\'\n\nError handling behavior - Currently continues on to next script reguardless of success or failure of task\n\nRestart protection with serialization of progress \n\n\n\n\n\n\n\n\n',
+86 silly publish   _id: 'runno@0.0.1',
+86 silly publish   dist: { shasum: '8ebd6302930b1a0c8ce7251f04dded308f6488fe' },
+86 silly publish   _from: '.' }
+87 verbose url raw runno
+88 verbose url resolving [ 'https://registry.npmjs.org/', './runno' ]
+89 verbose url resolved https://registry.npmjs.org/runno
+90 info trying registry request attempt 1 at 15:28:25
+91 http PUT https://registry.npmjs.org/runno
+92 http 409 https://registry.npmjs.org/runno
+93 verbose url raw runno
+94 verbose url resolving [ 'https://registry.npmjs.org/', './runno' ]
+95 verbose url resolved https://registry.npmjs.org/runno
+96 info trying registry request attempt 1 at 15:28:26
+97 http GET https://registry.npmjs.org/runno
+98 http 200 https://registry.npmjs.org/runno
+99 error publish fail Cannot publish over existing version.
+99 error publish fail Update the 'version' field in package.json and try again.
+99 error publish fail
+99 error publish fail If the previous version was published in error, see:
+99 error publish fail     npm help unpublish
+99 error publish fail
+99 error publish fail To automatically increment version numbers, see:
+99 error publish fail     npm help version
+100 error System Darwin 11.4.2
+101 error command "node" "/usr/local/bin/npm" "publish"
+102 error cwd /Users/dbarnhart/Development/projects/runno
+103 error node -v v0.10.4
+104 error npm -v 1.2.18
+105 error code EPUBLISHCONFLICT
+106 verbose exit [ 1, true ]
