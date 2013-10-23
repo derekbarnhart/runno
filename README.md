@@ -1,9 +1,7 @@
-runno
+runno (NOTE: currently in ALPHA)
 =====
 
 Simple job runner for command line tasks with complex dependencies
-
-###NOTE: runno is in ALPHA
 
 ##Purpose
 
