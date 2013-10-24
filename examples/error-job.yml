@@ -1,0 +1,18 @@
+--- This is a basic job to demonstrate how runno jobs are structured
+tasks:
+  --- The list of tasks in this job
+  -
+    --- A generic task 
+    id: task-one
+    retry: 2
+    cmd: >
+      node examples/fail
+    dependencies: []
+
+  -
+    --- A generic task 
+    id: task-two
+    cmd: >
+      echo Task two ran!!
+    dependencies:
+      - task-one

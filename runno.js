@@ -64,6 +64,15 @@ for(var item in scripts){
     }
 
     /*
+        Set up the retries incase a script fails
+    */
+    if(scripts[item].hasOwnProperty('retry')){
+        scripts[item].retry = parseInt(scripts[item].retry)   
+    } else {
+        scripts[item].retry = 0
+    }
+
+    /*
         Add Scheduling Functionality
     */
     if(scripts[item].hasOwnProperty("schedule")){
@@ -92,13 +101,51 @@ for(var item in scripts){
 
 
 function setupDependencies(id,promiseList){
-    Q.all( promiseList ).then( function(){
-        exec(scripts[id].cCmd, function(error,output,code){
-            console.log(id+' Finished')
+    Q.all( promiseList ).then( 
+        //Success handler
+        function(){
+        
+        console.log('Previous resolved with: ',arguments)
 
-            defers[id].resolve()
+        var executionCount = 0;
+        var executeScript = function(){
+            executionCount += 1;
+
+            exec(scripts[id].cCmd, function(error,output,code){
+            
+            console.log(id + ' Output', output )
+
+            if(error)
+            {
+               
+                console.log(id + ' Failed')
+                console.log('Output', output ) 
+                
+               
+
+                if(scripts[id].retry > executionCount) 
+                {
+                    executeScript()
+
+                } else {
+
+                    defers[id].reject()
+                }
+            
+            } else {
+            
+                console.log(id+' Succeeded')
+                defers[id].resolve()
+            }            
         })
-    })
+        } 
+         executeScript()   
+    },
+        //Failure handler
+        function(){
+            console.log('Previous rejected with: ',arguments)
+            console.dir('Something failed')
+        })
 }
 
 for(var id in scripts){
