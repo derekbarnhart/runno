@@ -19,11 +19,6 @@ winston.loggers.add('fileLogger', {
 });
 
 
-//console.log(printf("%02d", 1))
-
-
-//process.exit(0)
-
 var fileLog = winston.loggers.get('fileLogger')
 //This will be the task queue for all the commands to be run
 var q = async.queue(
@@ -89,9 +84,7 @@ launch(job.loop, customArgv)
 function launch(loop, itervars){
 	itervars = typeof itervars != 'undefined' ? itervars : {}
 
-
 //Validate loopObject
-
 if(loop.hasOwnProperty("end")){
 
     var i = loop.hasOwnProperty("start")? loop.start : 0;
@@ -108,11 +101,8 @@ if(loop.hasOwnProperty("end")){
 			launch(loop.loop, itervars )
 
 		} else {
-			var compiledCmd = template(itervars);
-			
+			var compiledCmd = template(itervars);			
 			addToQueue({id:_.uniqueId(),cmd:compiledCmd})
-			
-			console.log(compiledCmd)
 		}
 
 	}
@@ -120,33 +110,24 @@ if(loop.hasOwnProperty("end")){
 
 	for(var item in loop.list){
 		
-			itervars[loop.var] = loop.list[item];
+		itervars[loop.var] = loop.list[item];
 
-			if(loop.hasOwnProperty("loop")){
+		if(loop.hasOwnProperty("loop")){
 
-				launch(loop.loop, itervars )
+			launch(loop.loop, itervars )
 
-			} else {
-				var compiledCmd = template(itervars);
-				
-				addToQueue({id:_.uniqueId(),cmd:compiledCmd})
-				
-				console.log(compiledCmd)
-			}
-
+		} else {
+			var compiledCmd = template(itervars);
+			
+			addToQueue({id:_.uniqueId(),cmd:compiledCmd})
+		}
 	}
-
 } else {
-
 	//Invalid format
-
 }
-
 //Check if its a list or a count
 
 //
-
-
 
 }
 
