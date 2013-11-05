@@ -1,0 +1,25 @@
+{
+
+"arguments": {
+	"date":  {"default":"20131013"}
+},
+
+	"cmd":"sleep 1;echo {{date}} {{hr}} {{min}} {{ten}}",
+
+	"cmd": "mkdir -p {{basepath}}{{outpath}}/{{date}}; touch {{basepath}}{{outpath}}/{{date}}/{{activity}}.{{istr}}.{{out_file_ext}}; zcat /home/tpiautomator/psql_backup/{{activity}}/{{date}}/{{activity}}.{{date}}.{{istr}}.{{jstr}}.gz | /usr/bin/node {{basepath}}{{scriptpath}}parser --activity {{activity}} >>{{basepath}}{{outpath}}/{{date}}/{{activity}}.{{istr}}.{{out_file_ext }}",
+
+	
+	"thread": {
+
+			"name":"hr",
+			"format":true,
+			"count": 24,
+
+			"thread": {
+				"name":"min",
+				"format":true,
+				"list": ["monday","tuesday"]
+			}	
+	}
+}
+  

@@ -1,0 +1,25 @@
+args: 
+  date: 
+    demand: true
+  activity:
+    demand: true
+  basepath:
+    default: /home/tpiautomator/
+  outpath:
+    default: data
+
+loop: 
+  var: istr
+  format: %02d
+  end: 24
+  loop: 
+    var: jstr
+    format: %02d
+    end: 60
+    step: 10
+
+cmd: >
+  echo "{{name}} mkdir -p {{basepath}}{{outpath}}/{{date}};
+  touch {{basepath}}{{outpath}}/{{date}}/{{activity}}.{{istr}}.txt;
+  zcat /home/tpiautomator/psql_backup/{{activity}}/{{date}}/{{activity}}.{{date}}.{{istr}}.{{jstr}}.gz | /usr/bin/node {{basepath}}{{scriptpath}}parser --activity {{activity}} >>{{basepath}}{{outpath}}/{{date}}/{{activity}}.{{istr}}.txt
+  "
